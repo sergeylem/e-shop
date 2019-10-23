@@ -13,6 +13,7 @@
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
     "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
     "styled-components": "^4.3.2"
   },
@@ -36,5 +37,19 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeylem/e-shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergeylem/e-shop/issues"
+  },
+  "homepage": "https://github.com/sergeylem/e-shop#readme"
 }
