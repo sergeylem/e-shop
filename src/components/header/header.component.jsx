@@ -44,53 +44,53 @@ const Header = ({ currentUser, hidden }) => (
         }
       </nav>
 
-      <div class="heading">
-        <h1 class="heading-text">Clothes Store</h1>
+      <div className="heading">
+        <h1 className="heading-text">Clothes Store</h1>
       </div>
 
       <nav className="second-nav">
         <ul className="second-nav-list">
           <li className="second-nav-item">
-            <a href="#" className="second-nav-link">
+            <Link className="second-nav-link" to='/shop'>
               Shop
-            </a>
+            </Link>
           </li>
           <li className="second-nav-item dropdown-li">
-            <a href="#" className="second-nav-link">
+            <Link className="second-nav-link">
               Gift Ideas
-            </a>
+            </Link>
             <ul className="dropdown">
               <li className="dropdown-item">
-                <a href="#" className="dropdown-link">
+                <Link className="dropdown-link">
                   Under $25
-                </a>
+                </Link>
               </li>
               <li className="dropdown-item">
-                <a href="#" className="dropdown-link">
+                <Link className="dropdown-link">
                   $25 - $50
-                </a>
+                </Link>
               </li>
               <li className="dropdown-item">
-                <a href="#" className="dropdown-link">
+                <Link className="dropdown-link">
                   Above $50
-                </a>
+                </Link>
               </li>
             </ul>
           </li>
           <li className="second-nav-item">
-            <a href="#" className="second-nav-link">
+            <Link className="second-nav-link">
               About Us
-            </a>
+            </Link>
           </li>
           <li className="second-nav-item">
-            <a href="#" className="second-nav-link">
+            <Link className="second-nav-link">
               Our Team
-            </a>
+            </Link>
           </li>
           <li className="second-nav-item">
-            <a href="#" className="second-nav-link">
+            <Link className="second-nav-link">
               News
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
