@@ -5,8 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
-  margin: 0 7.5px 15px;
+  border: 1px solid red;
+  margin: 5px 5px 5px 5px;
   overflow: hidden;
 
   &:hover {
@@ -23,16 +23,16 @@
   }  
 
   &.large {
-    height: 380px;
+    height: 350px;
   }
 
-  &:first-child {
-    margin-right: 7.5px;
-  }
+  // &:first-child {
+  //   margin-right: 7.5px;
+  // }
 
-  &:last-child {
-    margin-left: 7.5px;
-  }
+  // &:last-child {
+  //   margin-left: 7.5px;
+  // }
 
   .background-image {
     width: 100%;

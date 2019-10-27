@@ -16,8 +16,8 @@ import { selectCurrentUser } from '../../redux/user/user.selectors'
 const Header = ({ currentUser, hidden }) => (
   // <div className='container'>
     <header className="header">
-      <Link className='logo' to='/'>
-        <Logo className='logo-img' />
+      <Link className='' to='/'>
+        <Logo className='' />
       </Link>
 
       <nav className="first-nav">
@@ -44,12 +44,12 @@ const Header = ({ currentUser, hidden }) => (
         }
       </nav>
 
-      <div className="heading">
+      <div className="heading"> 
         <h1 className="heading-text">Clothes Store</h1>
       </div>
 
       <nav className="second-nav">
-        <ul className="second-nav-list">
+        <div className="second-nav-list">
           <li className="second-nav-item">
             <Link className="second-nav-link" to='/shop'>
               Shop
@@ -92,7 +92,7 @@ const Header = ({ currentUser, hidden }) => (
               News
             </Link>
           </li>
-        </ul>
+        </div>
       </nav>
 
     </header>
