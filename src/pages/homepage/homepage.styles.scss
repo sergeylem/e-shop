@@ -5,7 +5,125 @@
   padding: 10px 0px;
 }
 
-.slide{
+.slide {
   width: 100%;
-  height: 100%;
+  height: 40vh;
+}
+
+.slideshow {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 5px;
+
+
+  // @include response(xl) {
+  //     height: 70vh;
+  // }
+
+  // @include response(lg) {
+  //     height: 60vh;
+  // }
+
+  // @include response(md) {
+  //     height: 50vh;
+  // }
+
+  &-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    visibility: hidden;
+    opacity: 0;
+    animation: slideshow 20s linear infinite;
+
+
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+
+  &-content {
+    background-color: rgba(255, 255, 238, 0.9);
+    position: absolute;
+    bottom: 3rem;
+    left: 6rem;
+    right: 6rem;
+    max-width: 30rem;
+    padding: 1rem;
+
+    // @include response(lg) {
+    //     padding: 2rem;
+    // }
+
+    h2 {
+      font-size: size(xl) + 1.2rem;
+      color: color(primary);
+    }
+
+    p {
+      margin: 1rem 0;
+      font-size: size(sm);
+    }
+  }
+}
+
+$animList: 1 0s, 2 6s, 3 12s, 4 18s, 5 24s;
+
+@each $item in $animList {
+  .slideshow-slide:nth-child(#{nth($item, 1)}) {
+    animation-delay: nth($item, 2);
+  }
+}
+
+@keyframes slideshow {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  11% {
+    visibility: visible;
+    opacity: 1;
+  }
+  33% {
+    visibility: visible;
+    opacity: 1;
+  }
+  44% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+
+  margin-top: 5px;
+  
+  border-top: 0.1rem solid #333;
+  background-color: rosybrown;
+
+
+  // @include response(lg) {
+  //     flex-wrap: wrap;
+  // }
+
+  &-heading {
+      padding-left: 3rem;
+      padding-right: 3rem;
+  }
+
 }

@@ -5,8 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
-  margin: 5px 5px 5px 5px;
+  border: 1px solid saddlebrown;
+  margin: 5px;
   overflow: hidden;
 
   &:hover {
@@ -19,6 +19,7 @@
   
     & .content {
       opacity: 0.9;
+      visibility: visible;
     }
   }  
 
@@ -52,6 +53,7 @@
     background-color: white; 
     opacity: 0.7;
     position: absolute;
+    visibility: hidden;
 
     .title {
       font-weight: bold;
