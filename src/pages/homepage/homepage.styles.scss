@@ -39,7 +39,7 @@
     height: inherit;
     visibility: hidden;
     opacity: 0;
-    animation: slideshow 20s linear infinite;
+    animation: slideshow 200s linear infinite;
 
 
     img {
@@ -74,7 +74,7 @@
   }
 }
 
-$animList: 1 0s, 2 6s, 3 12s, 4 18s, 5 24s;
+$animList: 1 0s, 2 60s, 3 120s, 4 180s, 5 240s;
 
 @each $item in $animList {
   .slideshow-slide:nth-child(#{nth($item, 1)}) {
