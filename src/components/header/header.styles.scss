@@ -12,6 +12,8 @@
   grid-template-columns: minmax(10rem, 1fr) repeat(7, minmax(min-content, 16rem)) minmax(10rem, 1fr);
   grid-template-rows: repeat(4, min-content);
   grid-gap: 0rem;
+  background-color: lighten(rosybrown, 15%);
+
 //  z-index: 100;
 }
 
@@ -22,21 +24,26 @@
   background-color: lighten(rosybrown, 15%);
 }
 .heading-text {
-  padding: 0px ;
+  padding-bottom: 20px ;
   font-family: "Great Vibes", cursive;
   font-size: 3rem;
   font-weight: lighter;
   letter-spacing: 0.5rem;
 
 }
-
+.logo {
+  margin-left: 15px;
+  margin-top: 15px;
+//  width: 50px;
+}
 .first-nav {
-  grid-column: 7 / 10;
+  grid-column: 8 / 10;
   grid-row: 1 / 2;
+  margin-right: 15px;
 }
 .first-nav-list {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
 }
@@ -46,7 +53,8 @@
 .first-nav-link {
   color: #333;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+//  font-weight: bold;
   transition: all 0.3s;
 }
 .first-nav-link:hover {
