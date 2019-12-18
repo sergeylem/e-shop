@@ -21,11 +21,8 @@ const Header = ({ currentUser, hidden }) => (
 
       <nav className="first-nav">
         <div className="first-nav-list">
-          <Link className='first-nav-link' to='/shop'>
-            Shop
-          </Link>
-          <Link className="first-nav-link" to='/shop'>
-            Contact Us
+          <Link className="first-nav-link" to='/signup'>
+            Sign Up
           </Link>
           {currentUser ? (
             <div className='first-nav-link' onClick={() => auth.signOut()}>
@@ -56,7 +53,7 @@ const Header = ({ currentUser, hidden }) => (
           </li>
           <li className="second-nav-item dropdown-li">
             <Link className="second-nav-link">
-              Gift Ideas
+              Gifts
             </Link>
             <ul className="dropdown">
               <li className="dropdown-item">
@@ -78,17 +75,17 @@ const Header = ({ currentUser, hidden }) => (
           </li>
           <li className="second-nav-item">
             <Link className="second-nav-link">
-              About Us
+              Mens
             </Link>
           </li>
           <li className="second-nav-item">
             <Link className="second-nav-link">
-              Our Team
+              Womens
             </Link>
           </li>
           <li className="second-nav-item">
             <Link className="second-nav-link">
-              News
+              Children
             </Link>
           </li>
         </div>

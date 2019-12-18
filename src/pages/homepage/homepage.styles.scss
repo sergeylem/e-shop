@@ -1,8 +1,7 @@
 .homepage {
   display: flex;
   flex-direction: column;
-  align-items: center;
-//  padding: 10px 0px;
+  padding: 0px 0px;
 }
 
 .slide {
@@ -16,7 +15,6 @@
   position: relative;
   width: 100%;
   height: 40vh;
-//  margin-bottom: 5px;
 
 
   // @include response(xl) {
@@ -39,7 +37,7 @@
     height: inherit;
     visibility: hidden;
     opacity: 0;
-    animation: slideshow 200s linear infinite;
+    animation: slideshow 20000s linear infinite;
 
 
     img {
@@ -74,7 +72,7 @@
   }
 }
 
-$animList: 1 0s, 2 60s, 3 120s, 4 180s, 5 240s;
+$animList: 1 0s, 2 600s, 3 1200s, 4 1800s, 5 2400s;
 
 @each $item in $animList {
   .slideshow-slide:nth-child(#{nth($item, 1)}) {
@@ -85,7 +83,7 @@ $animList: 1 0s, 2 60s, 3 120s, 4 180s, 5 240s;
 @keyframes slideshow {
   0% {
     visibility: hidden;
-    opacity: 0;
+    opacity: 1; //opacity: 0
   }
   11% {
     visibility: visible;
